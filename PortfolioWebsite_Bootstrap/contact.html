@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Integrated CSS Styles */
+        body {
+            color: darkslategray;
+            margin: 0;
+            font-family: Helvetica, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: #f0f8ff;
+        }
+
+        .navtext {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #007bff;
+        }
+
+        .heading h1 {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        hr {
+            padding: 4px;
+            width: 100%;
+            height: 7px;
+            border-radius: 7px;
+            background: #007bff;
+        }
+
+        section {
+            width: 80%;
+            border-radius: 7px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            text-align: center;
+            color: #007bff;
+        }
+
+        label {
+            margin-left: 5px;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #3b3b4f;
+        }
+
+        input,
+        textarea {
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            display: block;
+            margin: 40px auto;
+            width: 40%;
+            padding: 15px;
+            font-size: 1.438rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 600px) {
+            button {
+                width: 60%;
+            }
+
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ContactMe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact text-center py-5">
+            <h2 class="text">Contact Me</h2>
+            <hr />
+            <form class="w-50 mx-auto">
+                <div class="info mb-3">
+                    <label for="Name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="info mb-3">
+                    <label for="Email">Email:</label>
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <hr />
+                <div class="question-block">
+                    <label for="css-textarea">Leave your message here :</label>
+                </div>
+                <div class="answer">
+                    <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+                </div>
+                <hr />
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </main>
+    <hr />
+    <footer class="bg-dark text-white text-center py-3">
+        <center>
+            <p>&copy; 2024 My Portfolio</p>
+        </center>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
